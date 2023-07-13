@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
+import 'package:ram_niwas_singh_assignment/controllers/home_controller.dart';
 
 import 'controllers/auth_controller.dart';
 import 'helper/dependencies.dart' as dep;
@@ -44,6 +45,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.find<AuthController>();
+    Get.find<HomeController>();
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
